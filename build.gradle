@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'de.tudbut'
+version = '1.0'
+
+configurations {
+    atj
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation atj(files("libs/TuddyLIB.jar"))
+}
+
+test {
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from {
+        configurations.atj.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
