@@ -30,13 +30,4 @@ jar {
     }
 
     exclude("net")
-
-    manifest {
-        attributes(
-                'TweakClass': 'de.tudbut.mcregistry.DoNothingTweaker',
-                'TweakOrder': 0,
-                'FMLCorePluginContainsFMLMod': 'true',
-                'ForceLoadAsMod': 'true'
-        )
-    }
 }
