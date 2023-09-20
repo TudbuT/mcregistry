@@ -5,7 +5,6 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.io.IOException;
 
-@Mod(modid = "mcregistry")
 public class MCRegistry {
     public static final Registry GlobalRegistry;
     static {
