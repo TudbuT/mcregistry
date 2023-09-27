@@ -1,7 +1,6 @@
 package de.tudbut.mcregistry;
 
 import de.tudbut.tools.Registry;
-import net.minecraftforge.fml.common.Mod;
 
 import java.io.IOException;
 
